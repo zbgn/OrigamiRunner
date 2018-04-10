@@ -136,8 +136,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83910628}
   m_LocalRotation: {x: -0, y: -0, z: -0.049961854, w: 0.99875116}
-  m_LocalPosition: {x: -0.125, y: -2.307, z: -0.29380798}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.125, y: -2.307, z: 0.01}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1}
   m_Children: []
   m_Father: {fileID: 1078116230}
   m_RootOrder: 1
@@ -209,7 +209,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 169701545}
   m_LocalRotation: {x: -0, y: -0, z: -0.049961854, w: 0.99875116}
-  m_LocalPosition: {x: -0.05, y: -2.34, z: -0.30870068}
+  m_LocalPosition: {x: -0.05, y: -2.34, z: -0.36}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 371341449}
@@ -391,7 +391,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 442177362}
   m_LocalRotation: {x: -0, y: -0, z: -0.049961854, w: 0.99875116}
-  m_LocalPosition: {x: -0.01, y: -1.28, z: -0.30870068}
+  m_LocalPosition: {x: -0.01, y: -1.28, z: -0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 371341449}
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 593285456}
   - component: {fileID: 593285457}
   m_Layer: 0
-  m_Name: Runner_RUA
+  m_Name: Runner_LUA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -464,7 +464,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 593285455}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.72, y: -0.02, z: 0}
+  m_LocalPosition: {x: 0.72, y: -0.02, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 686040494}
@@ -504,7 +504,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
+  m_Sprite: {fileID: 21300010, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 611929069}
   - component: {fileID: 611929070}
   m_Layer: 0
-  m_Name: Runner_RLA
+  m_Name: Runner_LLA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -537,7 +537,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 611929068}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.67999995, y: -0.75, z: 0}
+  m_LocalPosition: {x: 0.67999995, y: -0.75, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 686040494}
@@ -577,7 +577,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
+  m_Sprite: {fileID: 21300012, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -609,13 +609,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 673923158}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.086, y: -3.02, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.07059173, w: 0.99750537}
+  m_LocalPosition: {x: 0.11, y: -3, z: -0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 371341449}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.096001}
 --- !u!212 &673923160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -669,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686040494}
   m_Layer: 0
-  m_Name: RightArm
+  m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,7 +682,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 686040493}
   m_LocalRotation: {x: 0, y: 0, z: 0.30070576, w: 0.953717}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 593285456}
@@ -701,7 +701,7 @@ GameObject:
   - component: {fileID: 843492481}
   - component: {fileID: 843492482}
   m_Layer: 0
-  m_Name: Runner_LUA
+  m_Name: Runner_RUA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -713,13 +713,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 843492480}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: 0.27, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.598373, w: 0.80121773}
+  m_LocalPosition: {x: -0.86, y: 0.46, z: -0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1739424731}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -73.507}
 --- !u!212 &843492482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -754,7 +754,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300010, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
+  m_Sprite: {fileID: 21300002, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -817,8 +817,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193490833}
-  m_LocalRotation: {x: -0, y: -0, z: -0.049961854, w: 0.99875116}
-  m_LocalPosition: {x: -0.06, y: -1.26, z: -0.29380798}
+  m_LocalRotation: {x: -0, y: -0, z: -0.049961865, w: 0.99875116}
+  m_LocalPosition: {x: -0.05999997, y: -1.26, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1078116230}
@@ -890,13 +890,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694102506}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.033, y: -3.063, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.20401348, w: 0.9789681}
+  m_LocalPosition: {x: 0.08, y: -3.02, z: 0.005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1078116230}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 23.544}
 --- !u!212 &1694102508
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739424731}
   m_Layer: 0
-  m_Name: LeftArm
+  m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1063,7 +1063,7 @@ GameObject:
   - component: {fileID: 1804563141}
   - component: {fileID: 1804563142}
   m_Layer: 0
-  m_Name: Runner_LH
+  m_Name: Runner_RH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1075,13 +1075,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1804563140}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.43, y: -0.9100001, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6402765, w: 0.76814455}
+  m_LocalPosition: {x: -1.25, y: -0.36, z: -0.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1739424731}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -79.625}
 --- !u!212 &1804563142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1116,7 +1116,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300014, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
+  m_Sprite: {fileID: 21300006, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 1819799343}
   - component: {fileID: 1819799344}
   m_Layer: 0
-  m_Name: Runner_LLA
+  m_Name: Runner_RLA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1149,7 +1149,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1819799342}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.45, y: -0.46000007, z: 0}
+  m_LocalPosition: {x: -1.21, y: 0.1, z: -0.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1739424731}
@@ -1189,7 +1189,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
+  m_Sprite: {fileID: 21300004, guid: e932aca05da284aa4aacb7379234ec5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1412,7 +1412,7 @@ GameObject:
   - component: {fileID: 1998898362}
   - component: {fileID: 1998898363}
   m_Layer: 0
-  m_Name: Runner_RH
+  m_Name: Runner_LH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1425,7 +1425,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998898361}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.72999996, y: -1.2, z: 0}
+  m_LocalPosition: {x: 0.72999996, y: -1.2, z: 0.002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 686040494}
@@ -1498,7 +1498,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2033466628}
   m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 1.3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 394018790}
