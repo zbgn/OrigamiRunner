@@ -1322,18 +1322,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1467382061
-BoxCollider:
+--- !u!61 &1467382061
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1467382058}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 19.2, y: 10.8}
+    newSize: {x: 19.2, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 19.2, y: 2.0629072, z: 0.2}
-  m_Center: {x: 0, y: -4.3685465, z: 0}
+  m_Size: {x: 19.2, y: 10.8}
+  m_EdgeRadius: 0
 --- !u!1 &1694102506
 GameObject:
   m_ObjectHideFlags: 0
@@ -1546,6 +1559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742774838}
   - component: {fileID: 1742774839}
+  - component: {fileID: 1742774840}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -1610,6 +1624,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1742774840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742774837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2ae9fcb97ade214cad3c467e6070c6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1749748718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,6 +1926,7 @@ GameObject:
   - component: {fileID: 1883216203}
   - component: {fileID: 1883216204}
   - component: {fileID: 1883216205}
+  - component: {fileID: 1883216206}
   m_Layer: 9
   m_Name: Character
   m_TagString: Player
@@ -1998,7 +2024,7 @@ MonoBehaviour:
   Floor:
     serializedVersion: 2
     m_Bits: 4294967295
-  colidFloor: 1
+  colidFloor: 0
 --- !u!50 &1883216205
 Rigidbody2D:
   serializedVersion: 4
@@ -2019,6 +2045,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1883216206
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1883216200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.0001, y: 0.0001}
+  m_EdgeRadius: 0
 --- !u!1 &1912487705
 GameObject:
   m_ObjectHideFlags: 0
