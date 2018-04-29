@@ -2,34 +2,38 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+    
+    public bool isgrounded;
 
-	public static Animator anim;
-    public Transform checkFloor;
-    public LayerMask Floor;
-
-    public bool colidFloor = false;
-	float sizeFloor = 0.3f;
-	
-
-	// Use this for initialization
-	void Start()
+    // Use this for initialization
+    void Start()
 	{
-		anim = GetComponent<Animator> ();
-	}
-
-	void FixedUpdate()
-	{
-		colidFloor = Physics2D.OverlapCircle(checkFloor.position, sizeFloor, Floor);
-		anim.SetBool("floor", colidFloor);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
         // Jump
-        if (colidFloor && Input.GetButtonDown("Jump"))
+        if (isgrounded && Input.GetKeyDown(KeyCode.Space))
         {
-            GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 225));
+            GetComponent<Rigidbody2D>().AddForce(transform.up * 70, ForceMode2D.Impulse);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D theCollision)
+    {
+        if (theCollision.tag == "floor")
+        {
+            isgrounded = true;
+        }
+    }
+
+    //consider when character is jumping .. it will exit collision.
+    void OnTriggerExit2D(Collider2D theCollision)
+    {
+        if (theCollision.tag == "floor")
+        {
+            isgrounded = false;
         }
     }
 }
