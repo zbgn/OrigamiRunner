@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class Menu : MonoBehaviour {
 	void OnGUI() {
 		if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Play"))
 		{
-			Application.LoadLevel(1);
+			SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 		}
 		if (GUI.Button(new Rect(origin_x, origin_y + buttonHeight + 30, buttonWidth, buttonHeight), "Exit"))
 		{
