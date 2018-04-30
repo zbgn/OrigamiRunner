@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour {
 	public int buttonHeight;
 	private int origin_x;
 	private int origin_y;
+	private AudioSource audio;
 
 	// Use this for initialization
 	void Start () {
@@ -16,15 +17,18 @@ public class Menu : MonoBehaviour {
 		buttonHeight = 50;
 		origin_x = Screen.width / 2 - buttonWidth / 2;
 		origin_y = Screen.height / 2 - buttonHeight * 2;
+		audio = GetComponent<AudioSource> ();
 	}
 	
 	void OnGUI() {
 		if (GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "Play"))
 		{
+			audio.Play();
 			SceneManager.LoadScene("MainScene", LoadSceneMode.Single);
 		}
 		if (GUI.Button(new Rect(origin_x, origin_y + buttonHeight + 30, buttonWidth, buttonHeight), "Exit"))
 		{
+			audio.Play();
 			#if UNITY_EDITOR
 				UnityEditor.EditorApplication.isPlaying = false;
 			#else
