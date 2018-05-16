@@ -5,6 +5,12 @@ public class Player : MonoBehaviour {
     
     public bool isgrounded;
 
+    public GameObject shot;
+    public Transform shotSpawn;
+    public float fireRate;
+
+    private float nextFire;
+
     // Use this for initialization
     void Start()
 	{
@@ -17,6 +23,13 @@ public class Player : MonoBehaviour {
         if (isgrounded && Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<Rigidbody2D>().AddForce(transform.up * 70, ForceMode2D.Impulse);
+        }
+
+        // Shoot
+        if (Input.GetKeyDown(KeyCode.N) && Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            Instantiate(shot, shotSpawn.position, new Quaternion(0,0,0,0));
         }
     }
 
