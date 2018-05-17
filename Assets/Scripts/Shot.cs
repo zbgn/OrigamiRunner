@@ -4,12 +4,9 @@ using System.Collections;
 public class Shot : MonoBehaviour
 {
     public float speed = 8f;
-	private AudioSource sound;
 
     void Start()
     {
-		sound = GetComponent<AudioSource> ();
-		sound.Play ();
     }
 	
 	void Update()

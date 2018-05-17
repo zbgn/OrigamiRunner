@@ -10,12 +10,13 @@ public class Player : MonoBehaviour {
     public float fireRate;
 
     private float nextFire;
+	private AudioSource fireSound;
 
     // Use this for initialization
     void Start()
 	{
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -30,6 +31,8 @@ public class Player : MonoBehaviour {
         {
             nextFire = Time.time + fireRate;
             Instantiate(shot, shotSpawn.position, new Quaternion(0,0,0,0));
+			fireSound = shot.GetComponent<AudioSource> ();
+			fireSound.Play ();
         }
     }
 
