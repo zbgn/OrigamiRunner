@@ -17,5 +17,6 @@ public class Shot : MonoBehaviour
 	void Move()
 	{
 		transform.Translate(speed * Time.deltaTime, 0, 0);
+		transform.Rotate(new Vector3(Time.deltaTime * 15f, 0, 0));
 	}
 }
