@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c1ad95b00fe7e4e9294d1482f80f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -6
+  speed: -8
   enemy: []
 --- !u!4 &12925207
 Transform:
@@ -843,6 +843,7 @@ GameObject:
   - component: {fileID: 280935182}
   - component: {fileID: 280935184}
   - component: {fileID: 280935183}
+  - component: {fileID: 280935185}
   m_Layer: 10
   m_Name: Score
   m_TagString: Untagged
@@ -907,6 +908,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 280935181}
+--- !u!114 &280935185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 280935181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &312117625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2992,7 +3007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c1ad95b00fe7e4e9294d1482f80f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -6
+  speed: -8
   enemy: []
 --- !u!4 &1299024917
 Transform:
@@ -3125,7 +3140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ae9fcb97ade214cad3c467e6070c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -6
+  speed: -8
   width: 19
   height: 0
 --- !u!61 &1313495453
@@ -3585,7 +3600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2ae9fcb97ade214cad3c467e6070c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -6
+  speed: -8
   width: 19
   height: 0
 --- !u!1 &1510154490
@@ -4204,7 +4219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c1ad95b00fe7e4e9294d1482f80f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -6
+  speed: -8
   enemy: []
 --- !u!4 &1707515097
 Transform:
