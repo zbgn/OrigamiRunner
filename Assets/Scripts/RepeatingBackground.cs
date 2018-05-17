@@ -3,17 +3,16 @@ using System.Collections;
 
 public class RepeatingBackground : MonoBehaviour 
 {
-//	public float speed = 8f;
+public float speed = 8f;
 
 	private Vector3 backPos; public float width = 14.22f; public float height = 0f; private float X; private float Y;
 	
 	
-    private void Update()
+	
+	    private void Update()
     {
-//		transform.Translate(speed * Time.deltaTime, 0, 0);
-		transform.Translate(-GameController.instance.scrollSpeed * Time.deltaTime, 0, 0);
+		transform.Translate(-speed * Time.deltaTime, 0, 0);
     }
-
 
    void OnBecameInvisible()
      {

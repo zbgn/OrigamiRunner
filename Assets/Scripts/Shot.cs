@@ -24,9 +24,7 @@ public class Shot : MonoBehaviour
     {
         if (theCollision.tag == "bat")
         {
-//            GameController.instance.RunnerDied();
 			Destroy(theCollision.gameObject);
-//			Destroy(this);
 			GameController.instance.RunnerScored(3);			
         }
     }
