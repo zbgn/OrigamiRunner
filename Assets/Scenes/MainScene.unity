@@ -5189,7 +5189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclesPoolSize: 25
-  spawnRate: 4
+  spawnRate: 1
   objectList:
   - {fileID: 1707515093}
   - {fileID: 12925203}
