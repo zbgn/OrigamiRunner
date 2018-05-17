@@ -30,9 +30,9 @@ public class Player : MonoBehaviour {
 			return;
 		}
 		// Jump
-		if (isgrounded && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)))
+		if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0)))
         {
-            GetComponent<Rigidbody2D>().AddForce(transform.up * 70, ForceMode2D.Impulse);
+            GetComponent<Rigidbody2D>().AddForce(transform.up * 80, ForceMode2D.Impulse);
         }
 
         // Shoot
