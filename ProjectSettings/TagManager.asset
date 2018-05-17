@@ -8,6 +8,8 @@ TagManager:
   - enemy
   - shot
   - bat
+  - rock
+  - hole
   layers:
   - Default
   - TransparentFX

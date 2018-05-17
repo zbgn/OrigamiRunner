@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour {
         if (gameOver && Input.GetKeyDown("space"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1.0f;
         }
         if (Input.GetKeyDown("r"))
         {
@@ -48,5 +49,6 @@ public class GameController : MonoBehaviour {
     {
         gameOvertext.SetActive (true);
         gameOver = true;
+        Time.timeScale = 0.0f;
     }
 }

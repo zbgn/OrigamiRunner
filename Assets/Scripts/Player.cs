@@ -42,7 +42,7 @@ public class Player : MonoBehaviour {
         {
             isgrounded = true;
         }
-        if (theCollision.tag == "enemy")
+        if (theCollision.tag == "hole"|| theCollision.tag == "rock" || theCollision.tag == "bat")
         {
             GameController.instance.RunnerDied();
         }
