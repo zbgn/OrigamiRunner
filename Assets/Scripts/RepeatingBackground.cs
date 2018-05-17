@@ -16,12 +16,13 @@ public class RepeatingBackground : MonoBehaviour
 
    void OnBecameInvisible()
      {
+		if (Time.timeScale == 0)
+			return;
          //calculate current position
          backPos = gameObject.transform.position;
          //calculate new position
-         print (backPos);
          X = backPos.x + width*2;
-             Y = backPos.y + height*2;
+         Y = backPos.y + height*2;
          //move to new position when invisible
          gameObject.transform.position = new Vector3 (X, Y, 0f);
      }
