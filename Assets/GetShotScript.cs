@@ -10,4 +10,4 @@ void OnTriggerEnter2D(Collider2D theCollision)
             GameController.instance.RunnerDied();
         }
     }
-	}
+}
