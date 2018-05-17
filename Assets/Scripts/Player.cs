@@ -42,6 +42,10 @@ public class Player : MonoBehaviour {
         {
             isgrounded = true;
         }
+        if (theCollision.tag == "enemy")
+        {
+            GameController.instance.RunnerDied();
+        }
     }
 
     //consider when character is jumping .. it will exit collision.

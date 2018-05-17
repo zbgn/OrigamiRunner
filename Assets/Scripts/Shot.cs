@@ -19,4 +19,15 @@ public class Shot : MonoBehaviour
 		transform.Translate(speed * Time.deltaTime, 0, 0);
 		transform.Rotate(new Vector3(Time.deltaTime * 15f, 0, 0));
 	}
+
+	void OnTriggerEnter2D(Collider2D theCollision)
+    {
+        if (theCollision.tag == "bat")
+        {
+//            GameController.instance.RunnerDied();
+			Destroy(theCollision.gameObject);
+//			Destroy(this);
+			GameController.instance.RunnerScored(3);			
+        }
+    }
 }
